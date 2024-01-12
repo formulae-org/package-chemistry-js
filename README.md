@@ -1,4 +1,4 @@
-* # package-chemistry-js
+# package-chemistry-js
 
 Chemistry package for the [Fōrmulæ](https://formulae.org) programming language.
 
