@@ -24,7 +24,7 @@ Take a look at this [tutorial](https://formulae.org/?script=tutorials/Complex) t
     * Programmaticaly, from it atomic number
     * Programmaticaly, from its symbol
 
-* Obtaining information from a given element
+* Obtaining information for a given element
     * Atomic number
     * Atomic mass
     * Symbol
