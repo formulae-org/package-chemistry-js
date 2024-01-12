@@ -21,8 +21,8 @@ Take a look at this [tutorial](https://formulae.org/?script=tutorials/Complex) t
 
 * Creation of chemical elements
     * Interactively
-    * Programmaticaly, from it atomic number
-    * Programmaticaly, from its symbol
+    * Programmatically, from it atomic number
+    * Programmatically, from its symbol
 
 * Obtaining information for a given element
     * Atomic number
