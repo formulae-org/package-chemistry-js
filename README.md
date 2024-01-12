@@ -15,7 +15,7 @@ Take a look at this [tutorial](https://formulae.org/?script=tutorials/Complex) t
 ### Capabilities ###
 
 * Visualization
-    * Elements
+    * Chemical elements
     * Homonuclear compunds
     * Heteronuclear compounds
 
