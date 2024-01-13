@@ -29,3 +29,7 @@ Take a look at this [tutorial](https://formulae.org/?script=tutorials/Complex) t
     * Atomic mass
     * Symbol
     * Name
+
+### Examples
+
+[Chemical calculator](https://formulae.org/?script=examples/Chemical_calculator)
