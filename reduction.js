@@ -72,7 +72,13 @@ Chemistry.getAtomicNumber = async (getAtomicNumber, session) => {
 	
 	if (!elementExpr.getTag().startsWith("Chemistry.Element.")) return false;
 	
-	getAtomicNumber.replaceBy(CanonicalArithmetic.number2Expr(elementExpr.atomicNumber));
+	getAtomicNumber.replaceBy(
+		CanonicalArithmetic.canonical2InternalNumber(
+			new CanonicalArithmetic.Integer(
+				BigInt(elementExpr.atomicNumber)
+			)
+		)
+	);
 	return true;
 };
 
@@ -103,7 +109,13 @@ Chemistry.getAtomicMass = async (getAtomicMass, session) => {
 	
 	if (!elementExpr.getTag().startsWith("Chemistry.Element.")) return false;
 	
-	getAtomicMass.replaceBy(CanonicalArithmetic.number2Expr(Chemistry.common.elements[elementExpr.atomicNumber - 1][2]), true);
+	getAtomicMass.replaceBy(
+		CanonicalArithmetic.canonical2InternalNumber(
+			new CanonicalArithmetic.Decimal(
+				new session.Decimal(Chemistry.common.elements[elementExpr.atomicNumber - 1][2])
+			)
+		)
+	);
 	return true;
 };
 
