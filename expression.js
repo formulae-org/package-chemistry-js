@@ -182,3 +182,4 @@ Chemistry.setExpressions = function(module) {
 	Formulae.setExpression(module, "Chemistry.HomonuclearCompound",   Chemistry.HomonuclearCompound);
 	Formulae.setExpression(module, "Chemistry.HeteronuclearCompound", Chemistry.HeteronuclearCompound);
 };
+
