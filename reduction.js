@@ -74,7 +74,8 @@ Chemistry.getAtomicNumber = async (getAtomicNumber, session) => {
 	
 	getAtomicNumber.replaceBy(
 		CanonicalArithmetic.createInternalNumber(
-			CanonicalArithmetic.createInteger(elementExpr.atomicNumber, session)
+			CanonicalArithmetic.createInteger(elementExpr.atomicNumber, session),
+			session
 		)
 	);
 	return true;
@@ -109,7 +110,8 @@ Chemistry.getAtomicMass = async (getAtomicMass, session) => {
 	
 	getAtomicMass.replaceBy(
 		CanonicalArithmetic.createInternalNumber(
-			CanonicalArithmetic.createDecimal(Chemistry.common.elements[elementExpr.atomicNumber - 1][2], session)
+			CanonicalArithmetic.createDecimal(Chemistry.common.elements[elementExpr.atomicNumber - 1][2], session),
+			session
 		)
 	);
 	return true;
