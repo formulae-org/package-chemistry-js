@@ -21,7 +21,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 export class Chemistry extends Formulae.Package {}
 
 Chemistry.fromNumber = async (fromNumber, session) => {
-	let n = CanonicalArithmetic.getInteger(fromNumber.children[0]);
+	let n = Arithmetic.getInteger(fromNumber.children[0]);
 	if (n === undefined) {
 		ReductionManager.setInError(fromNumber.children[0], "Expression must be a positive integer number");
 		throw new ReductionError();
@@ -73,8 +73,8 @@ Chemistry.getAtomicNumber = async (getAtomicNumber, session) => {
 	if (!elementExpr.getTag().startsWith("Chemistry.Element.")) return false;
 	
 	getAtomicNumber.replaceBy(
-		CanonicalArithmetic.createInternalNumber(
-			CanonicalArithmetic.createInteger(elementExpr.atomicNumber, session),
+		Arithmetic.createInternalNumber(
+			Arithmetic.createInteger(elementExpr.atomicNumber, session),
 			session
 		)
 	);
@@ -109,8 +109,8 @@ Chemistry.getAtomicMass = async (getAtomicMass, session) => {
 	if (!elementExpr.getTag().startsWith("Chemistry.Element.")) return false;
 	
 	getAtomicMass.replaceBy(
-		CanonicalArithmetic.createInternalNumber(
-			CanonicalArithmetic.createDecimal(Chemistry.common.elements[elementExpr.atomicNumber - 1][2], session),
+		Arithmetic.createInternalNumber(
+			Arithmetic.createDecimal(Chemistry.common.elements[elementExpr.atomicNumber - 1][2], session),
 			session
 		)
 	);
