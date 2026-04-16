@@ -97,5 +97,5 @@ Chemistry.setEditions = function() {
 	});
 	
 	Formulae.addEdition("Chemistry", null, "Homonuclear compound",   () => Expression.binaryEdition("Chemistry.HomonuclearCompound", false));
-	Formulae.addEdition("Chemistry", null, "Heteronuclaer compound", () => Expression.binaryEdition("Chemistry.HeteronuclearCompound", false));
+	Formulae.addEdition("Chemistry", null, "Heteronuclear compound", () => Expression.binaryEdition("Chemistry.HeteronuclearCompound", false));
 };

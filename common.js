@@ -56,7 +56,7 @@ Common.elements = [
 	[ "Arsenic",       "As",  74.921595    ], // 33
 	[ "Selenium",      "Se",  78.971       ], // 34
 	[ "Bromine",       "Br",  79.904       ], // 35
-	[ "Krypton",      " Kr",  83.798       ], // 36
+	[ "Krypton",       "Kr",  83.798       ], // 36
 	[ "Rubidium",      "Rb",  85.4678      ], // 37
 	[ "Strontium",     "Sr",  87.62        ], // 38
 	[ "Yttrium",       "Y",   88.90584     ], // 39
